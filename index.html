@@ -8,6 +8,7 @@
     <meta name="author" content="Luca Ronca">
     <title>Luca Ronca - Professional Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +16,9 @@
     <nav class="navbar">
         <div class="container">
             <div class="navbar-content">
-                <div class="logo">Luca Ronca</div>
+                <div class="logo">
+                    LucaRonca.dev
+                </div>
                 <ul class="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
@@ -23,6 +26,11 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="theme-toggle">
+                    <button id="theme-btn" class="theme-btn" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -30,8 +38,17 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
+            <div class="hero-decorations">
+                <div class="decoration-line decoration-line-1"></div>
+                <div class="decoration-line decoration-line-2"></div>
+                <div class="decoration-dot decoration-dot-1"></div>
+                <div class="decoration-dot decoration-dot-2"></div>
+            </div>
             <div class="hero-content">
-                <h1>Innovative Digital Experiences</h1>
+                <div class="hero-prompt">
+                    <span class="prompt-prefix">public class</span> <span class="prompt-class">Portfolio</span><span class="prompt-bracket">()</span> <span class="prompt-bracket">{</span> <span class="prompt-bracket">}</span>
+                </div>
+                <h1 class="typing-text">Innovative Digital Experiences</h1>
                 <p class="hero-subtitle">VR, AR, Game Development & Web Solutions</p>
                 <p class="hero-description">
                     I create immersive digital experiences and professional web solutions that transform ideas into reality.
@@ -44,34 +61,45 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Services</h2>
+            <div class="section-header">
+                <h2>Services</h2>
+                <div class="header-decorations">
+                    <span class="accent-line"></span>
+                </div>
+            </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="card-glow"></div>
                     <div class="service-icon"><i class="fas fa-headset"></i></div>
                     <h3>VR Development</h3>
                     <p>Immersive virtual reality experiences using Unity and modern VR platforms.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-glow"></div>
                     <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
                     <h3>AR Experience</h3>
                     <p>Augmented reality solutions for mobile and web applications.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-glow"></div>
                     <div class="service-icon"><i class="fas fa-gamepad"></i></div>
                     <h3>Game Development</h3>
                     <p>Full-cycle game design and development for multiple platforms.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-glow"></div>
                     <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>Web Development</h3>
                     <p>Responsive, modern web applications with clean code and best practices.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-glow"></div>
                     <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
                     <h3>Consultancy</h3>
                     <p>Technical guidance and strategic planning for your digital projects.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-glow"></div>
                     <div class="service-icon"><i class="fas fa-bolt"></i></div>
                     <h3>Optimization</h3>
                     <p>Performance tuning and optimization for speed and efficiency.</p>
@@ -83,26 +111,49 @@
     <!-- Projects Preview Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Featured Projects</h2>
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="header-decorations">
+                    <span class="accent-line"></span>
+                </div>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250?text=VR+Museum" alt="VR Museum Experience">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="card-glow"></div>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=VR+Museum" alt="VR Museum Experience">
+                        <div class="project-overlay">
+                            <span class="badge">VR</span>
+                        </div>
+                    </div>
                     <div class="project-info">
                         <h3>VR Museum Experience</h3>
                         <p>An immersive virtual museum showcasing interactive 3D art installations and historical artifacts.</p>
                         <a href="cases/case1.html" class="btn btn-secondary">View Case Study</a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250?text=AR+Shopping+App" alt="AR Shopping Application">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-glow"></div>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=AR+Shopping+App" alt="AR Shopping Application">
+                        <div class="project-overlay">
+                            <span class="badge">AR</span>
+                        </div>
+                    </div>
                     <div class="project-info">
                         <h3>AR Shopping Application</h3>
                         <p>Mobile app enabling customers to visualize furniture in their space using augmented reality technology.</p>
                         <a href="cases/case2.html" class="btn btn-secondary">View Case Study</a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250?text=Web+Dashboard" alt="Analytics Dashboard">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-glow"></div>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Web+Dashboard" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <span class="badge">Web</span>
+                        </div>
+                    </div>
                     <div class="project-info">
                         <h3>Real-Time Analytics Dashboard</h3>
                         <p>Interactive web dashboard for data visualization and real-time analytics with responsive design.</p>
@@ -116,9 +167,14 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="header-decorations">
+                    <span class="accent-line"></span>
+                </div>
+            </div>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-right">
                     <p>
                         I'm a passionate developer with expertise in creating immersive digital experiences. 
                         My journey spans from complex VR/AR applications to elegant web solutions, always driven by a commitment to quality and innovation.
@@ -128,17 +184,17 @@
                         I specialize in bringing ambitious ideas to life through cutting-edge technology and creative problem-solving.
                     </p>
                 </div>
-                <div class="tech-stack">
+                <div class="tech-stack" data-aos="fade-left">
                     <h3>Tech Stack</h3>
                     <ul>
-                        <li>Unity 3D</li>
-                        <li>C#</li>
-                        <li>JavaScript / TypeScript</li>
-                        <li>React</li>
-                        <li>HTML5 / CSS3</li>
-                        <li>WebGL</li>
-                        <li>Three.js</li>
-                        <li>Python</li>
+                        <li><span class="tech-label">Unity 3D</span></li>
+                        <li><span class="tech-label">C#</span></li>
+                        <li><span class="tech-label">JavaScript / TypeScript</span></li>
+                        <li><span class="tech-label">React</span></li>
+                        <li><span class="tech-label">HTML5 / CSS3</span></li>
+                        <li><span class="tech-label">WebGL</span></li>
+                        <li><span class="tech-label">Three.js</span></li>
+                        <li><span class="tech-label">Python</span></li>
                     </ul>
                 </div>
             </div>
@@ -148,20 +204,28 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Let's Work Together</h2>
+            <div class="section-header">
+                <h2>Let's Work Together</h2>
+                <div class="header-decorations">
+                    <span class="accent-line"></span>
+                </div>
+            </div>
             <p class="contact-subtitle">Have a project in mind? Let's create something amazing together.</p>
             <div class="contact-methods">
-                <a href="mailto:luca.ronca@example.com" class="contact-card">
+                <a href="mailto:luca.ronca@example.com" class="contact-card" data-aos="zoom-in">
+                    <div class="card-glow"></div>
                     <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                     <h3>Email</h3>
                     <p>luca.ronca@example.com</p>
                 </a>
-                <a href="https://linkedin.com/in/lucaronca" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <a href="https://linkedin.com/in/lucaronca" target="_blank" rel="noopener noreferrer" class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-glow"></div>
                     <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
                     <h3>LinkedIn</h3>
                     <p>linkedin.com/in/lucaronca</p>
                 </a>
-                <a href="https://github.com/lucaronca" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <a href="https://github.com/lucaronca" target="_blank" rel="noopener noreferrer" class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-glow"></div>
                     <div class="contact-icon"><i class="fab fa-github"></i></div>
                     <h3>GitHub</h3>
                     <p>github.com/lucaronca</p>
@@ -177,6 +241,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
