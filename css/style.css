@@ -10,10 +10,10 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #e0e0e0;
+    background-color: #0d1117;
 }
 
 .container {
@@ -24,17 +24,17 @@ body {
 
 h1, h2, h3 {
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    color: #f0f6fc;
 }
 
 h2 {
     font-size: 36px;
     margin-bottom: 40px;
     text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #58a6ff;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 20px;
 }
 
 a {
@@ -46,46 +46,47 @@ a {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    border-radius: 5px;
-    font-weight: 600;
+    border-radius: 6px;
+    font-weight: 500;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     cursor: pointer;
-    border: none;
+    border: 1px solid transparent;
+    font-size: 14px;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background-color: #238636;
+    color: #ffffff;
+    border-color: #2ea043;
     margin-top: 20px;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    background-color: #2ea043;
+    border-color: #3fb950;
 }
 
 .btn-secondary {
-    background: #667eea;
-    color: white;
-    font-size: 14px;
-    padding: 10px 20px;
+    background-color: transparent;
+    color: #58a6ff;
+    border-color: #30363d;
 }
 
 .btn-secondary:hover {
-    background: #764ba2;
-    transform: translateY(-2px);
+    background-color: #0d1117;
+    border-color: #58a6ff;
 }
 
 /* ==================== NAVBAR ==================== */
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #2c3e50;
-    color: white;
+    background-color: #0d1117;
+    color: #e0e0e0;
     padding: 15px 0;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #30363d;
 }
 
 .navbar-content {
@@ -95,13 +96,10 @@ a {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    letter-spacing: 1px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    letter-spacing: 0.5px;
+    color: #58a6ff;
 }
 
 .nav-menu {
@@ -111,51 +109,49 @@ a {
 }
 
 .nav-menu a {
-    color: white;
+    color: #8b949e;
     font-size: 14px;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
     position: relative;
 }
 
 .nav-menu a:hover {
-    color: #667eea;
+    color: #58a6ff;
 }
 
 .nav-menu a:hover::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -8px;
     left: 0;
     width: 100%;
     height: 2px;
-    background: #667eea;
+    background: #58a6ff;
 }
 
 /* ==================== HERO SECTION ==================== */
 .hero {
     padding: 120px 20px;
-    background: linear-gradient(135deg, #f9f9f9 0%, #fff 100%);
+    background-color: #0d1117;
     text-align: center;
+    border-bottom: 1px solid #30363d;
 }
 
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f0f6fc;
 }
 
 .hero-subtitle {
     font-size: 24px;
-    color: #666;
+    color: #58a6ff;
     margin-bottom: 15px;
 }
 
 .hero-description {
     font-size: 16px;
-    color: #666;
+    color: #8b949e;
     max-width: 600px;
     margin: 0 auto 30px;
     line-height: 1.8;
@@ -164,43 +160,45 @@ a {
 /* ==================== SERVICES SECTION ==================== */
 .services {
     padding: 80px 20px;
-    background-color: #f9f9f9;
+    background-color: #010409;
+    border-bottom: 1px solid #30363d;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 20px;
 }
 
 .service-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 10px;
+    background: #0d1117;
+    padding: 30px;
+    border-radius: 6px;
     text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+    border: 1px solid #30363d;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.2);
+    border-color: #58a6ff;
+    background: #161b22;
 }
 
 .service-icon {
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 20px;
     display: block;
+    color: #58a6ff;
 }
 
 .service-card h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 15px;
-    color: #333;
+    color: #f0f6fc;
 }
 
 .service-card p {
-    color: #666;
+    color: #8b949e;
     font-size: 14px;
     line-height: 1.8;
 }
@@ -208,51 +206,52 @@ a {
 /* ==================== PROJECTS SECTION ==================== */
 .projects {
     padding: 80px 20px;
-    background-color: white;
+    background-color: #0d1117;
+    border-bottom: 1px solid #30363d;
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    gap: 20px;
 }
 
 .project-card {
-    background: white;
-    border-radius: 10px;
+    background: #161b22;
+    border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    border: 1px solid #30363d;
+    transition: all 0.2s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.25);
+    border-color: #58a6ff;
+    background: #0d1117;
 }
 
 .project-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .project-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .project-info {
-    padding: 30px;
+    padding: 25px;
 }
 
 .project-card h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #f0f6fc;
 }
 
 .project-card p {
-    color: #666;
+    color: #8b949e;
     font-size: 14px;
     margin-bottom: 20px;
     line-height: 1.8;
@@ -261,7 +260,8 @@ a {
 /* ==================== ABOUT SECTION ==================== */
 .about {
     padding: 80px 20px;
-    background-color: #f9f9f9;
+    background-color: #010409;
+    border-bottom: 1px solid #30363d;
 }
 
 .about-content {
@@ -272,98 +272,100 @@ a {
 }
 
 .about-text p {
-    color: #666;
-    font-size: 16px;
+    color: #8b949e;
+    font-size: 15px;
     line-height: 1.8;
     margin-bottom: 20px;
 }
 
 .tech-stack h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
-    color: #333;
+    color: #f0f6fc;
 }
 
 .tech-stack ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 12px;
 }
 
 .tech-stack li {
-    padding: 10px 15px;
-    background: white;
-    border-left: 3px solid #667eea;
-    color: #333;
-    font-size: 14px;
-    border-radius: 3px;
+    padding: 10px 12px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #58a6ff;
+    font-size: 13px;
+    border-radius: 6px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
 
 /* ==================== CONTACT SECTION ==================== */
 .contact {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #0d1117;
+    color: #e0e0e0;
     text-align: center;
+    border-bottom: 1px solid #30363d;
 }
 
 .contact h2 {
-    color: white;
-    background: none;
-    -webkit-text-fill-color: unset;
+    color: #58a6ff;
 }
 
 .contact-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 50px;
-    opacity: 0.95;
+    color: #8b949e;
 }
 
 .contact-methods {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 20px;
 }
 
 .contact-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 40px 30px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
+    background: #161b22;
+    padding: 30px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: 1px solid #30363d;
+    color: #e0e0e0;
 }
 
 .contact-card:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-5px);
+    border-color: #58a6ff;
+    background: #0d1117;
 }
 
 .contact-icon {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 15px;
     display: block;
+    color: #58a6ff;
 }
 
 .contact-card h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
-    color: white;
+    color: #f0f6fc;
 }
 
 .contact-card p {
-    font-size: 14px;
-    opacity: 0.95;
+    font-size: 13px;
+    color: #8b949e;
 }
 
 /* ==================== FOOTER ==================== */
 .footer {
-    background-color: #2c3e50;
-    color: white;
+    background-color: #010409;
+    color: #8b949e;
     text-align: center;
     padding: 30px 20px;
-    font-size: 14px;
+    font-size: 13px;
+    border-top: 1px solid #30363d;
 }
 
 /* ==================== RESPONSIVE DESIGN ==================== */
@@ -380,7 +382,7 @@ a {
     }
 
     .hero-subtitle {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .hero {
@@ -396,7 +398,7 @@ a {
 
     .services-grid,
     .projects-grid {
-        gap: 20px;
+        gap: 15px;
     }
 
     .nav-menu {
@@ -411,7 +413,7 @@ a {
     .service-card,
     .project-card,
     .contact-card {
-        padding: 30px 20px;
+        padding: 25px 20px;
     }
 
     .tech-stack ul {
@@ -461,14 +463,14 @@ a {
     }
 
     .logo {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .services-grid,
     .projects-grid,
     .contact-methods {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 12px;
     }
 
     .service-card,
@@ -478,11 +480,11 @@ a {
     }
 
     .service-icon {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .contact-icon {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .project-card img {
@@ -499,7 +501,7 @@ a {
     }
 
     .tech-stack li {
-        text-align: left;
+        text-align: center;
     }
 }
 
