@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Case Study - Luca Ronca Portfolio">
+    <meta name="author" content="Luca Ronca">
+    <title>Case Study - Luca Ronca</title>
+    <link rel="icon" href="https://placehold.co/64x64/0d1117/58a6ff?text=LR">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar Sticky -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <a href="../index.html">Luca Ronca</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#services">Servizi</a></li>
+                    <li><a href="../projects.html">Progetti</a></li>
+                    <li><a href="../index.html#about">Chi Sono</a></li>
+                    <li><a href="../index.html#contact">Contatti</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="theme-btn" class="theme-btn" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Case Study Header -->
+    <section class="case-study-hero">
+        <div class="container">
+            <div class="case-study-hero-content">
+                <a href="../projects.html" class="breadcrumb">
+                    <i class="fas fa-arrow-left"></i> Torna ai Progetti
+                </a>
+                <h1 id="case-title">Case Study</h1>
+                <p id="case-subtitle" class="case-subtitle"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="case-study-content">
+        <div class="container">
+            <div class="case-study-wrapper">
+                <!-- Hero Image -->
+                <div class="case-study-hero-image" data-aos="fade-up">
+                    <img id="case-image" src="" alt="Project">
+                    <div class="case-study-meta">
+                        <div class="meta-item">
+                            <span class="label"><i class="fas fa-briefcase"></i> Cliente</span>
+                            <span id="case-clients" class="value"></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label"><i class="fas fa-calendar"></i> Anno</span>
+                            <span id="case-year" class="value"></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label"><i class="fas fa-code"></i> Ruolo</span>
+                            <span id="case-role" class="value"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="case-study-main">
+                    <!-- Challenge Section -->
+                    <section class="case-section" data-aos="fade-up" data-aos-delay="100">
+                        <h2>La Sfida</h2>
+                        <p id="case-challenge"></p>
+                    </section>
+
+                    <!-- Solution Section -->
+                    <section class="case-section" data-aos="fade-up" data-aos-delay="200">
+                        <h2>La Soluzione</h2>
+                        <p id="case-solution"></p>
+                    </section>
+
+                    <!-- Tech Stack Section -->
+                    <section class="case-section" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Tecnologie Utilizzate</h2>
+                        <div class="tech-stack-grid">
+                            <ul id="case-tech-stack" class="tech-stack"></ul>
+                        </div>
+                    </section>
+
+                    <!-- Results Section -->
+                    <section class="case-section" data-aos="fade-up" data-aos-delay="400">
+                        <h2>Risultati</h2>
+                        <ul id="case-results" class="results-list"></ul>
+                    </section>
+
+                    <!-- Key Learnings Section -->
+                    <section class="case-section" data-aos="fade-up" data-aos-delay="500">
+                        <h2>Lezioni Apprese</h2>
+                        <ul id="case-learnings" class="learnings-list"></ul>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="case-study-sidebar" data-aos="fade-up" data-aos-delay="200">
+                    <div class="sidebar-card">
+                        <h3>Informazioni Progetto</h3>
+                        <div class="info-group">
+                            <label>Categoria</label>
+                            <p id="sidebar-category"></p>
+                        </div>
+                        <div class="info-group">
+                            <label>Clienti</label>
+                            <p id="sidebar-clients"></p>
+                        </div>
+                        <div class="info-group">
+                            <label>Anno</label>
+                            <p id="sidebar-year"></p>
+                        </div>
+                        <div class="info-group">
+                            <label>Ruolo</label>
+                            <p id="sidebar-role"></p>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Tecnologie</h3>
+                        <div id="sidebar-tech" class="tech-tags"></div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <a href="../projects.html" class="btn btn-primary" style="width: 100%; text-align: center;">
+                            <i class="fas fa-arrow-left"></i> Torna ai Progetti
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Luca Ronca. Tutti i diritti riservati.</p>
+            <p>P.IVA: 13210530013</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        // Load case study data
+        async function loadCaseStudy() {
+            try {
+                // Get project ID from URL parameter
+                const params = new URLSearchParams(window.location.search);
+                const projectId = params.get('id');
+
+                if (!projectId) {
+                    throw new Error('Nessun progetto specificato');
+                }
+
+                // Fetch projects data
+                const response = await fetch('../data/projects.json');
+                if (!response.ok) throw new Error('Errore nel caricamento dei dati');
+                
+                const data = await response.json();
+                const project = data.projects.find(p => p.id === projectId);
+
+                if (!project) {
+                    throw new Error('Progetto non trovato');
+                }
+
+                // Detect language
+                const currentLang = document.documentElement.lang || 'it';
+                const projectData = project[currentLang] || project.it;
+                const caseStudy = projectData.caseStudy;
+
+                // Populate page
+                document.title = `${projectData.title} - Case Study - Luca Ronca`;
+                document.querySelector('meta[name="description"]').content = projectData.description;
+
+                // Hero Section
+                document.getElementById('case-title').textContent = projectData.title;
+                document.getElementById('case-subtitle').textContent = caseStudy.subtitle;
+                document.getElementById('case-image').src = project.image;
+                document.getElementById('case-image').alt = projectData.title;
+
+                // Meta Info
+                document.getElementById('case-clients').textContent = project.clients.join(', ');
+                document.getElementById('case-year').textContent = project.year;
+                document.getElementById('case-role').textContent = caseStudy.role;
+
+                // Main Content
+                document.getElementById('case-challenge').textContent = caseStudy.challenge;
+                document.getElementById('case-solution').textContent = caseStudy.solution;
+
+                // Tech Stack
+                const techStack = document.getElementById('case-tech-stack');
+                techStack.innerHTML = '';
+                project.techStack.forEach(tech => {
+                    const li = document.createElement('li');
+                    li.textContent = tech;
+                    techStack.appendChild(li);
+                });
+
+                // Sidebar Tech
+                const sidebarTech = document.getElementById('sidebar-tech');
+                sidebarTech.innerHTML = '';
+                project.techStack.forEach(tech => {
+                    const tag = document.createElement('span');
+                    tag.className = 'tech-tag';
+                    tag.textContent = tech;
+                    sidebarTech.appendChild(tag);
+                });
+
+                // Results
+                const resultsList = document.getElementById('case-results');
+                resultsList.innerHTML = '';
+                caseStudy.results.forEach(result => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="fas fa-check-circle"></i> ${result}`;
+                    resultsList.appendChild(li);
+                });
+
+                // Key Learnings
+                const learningsList = document.getElementById('case-learnings');
+                learningsList.innerHTML = '';
+                caseStudy.keyLearnings.forEach(learning => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="fas fa-lightbulb"></i> ${learning}`;
+                    learningsList.appendChild(li);
+                });
+
+                // Sidebar Info
+                document.getElementById('sidebar-category').textContent = project.category;
+                document.getElementById('sidebar-clients').textContent = project.clients.join(', ');
+                document.getElementById('sidebar-year').textContent = project.year;
+                document.getElementById('sidebar-role').textContent = caseStudy.role;
+
+                // Reinitialize AOS
+                AOS.refresh();
+
+            } catch (error) {
+                console.error('Errore:', error);
+                const main = document.querySelector('.case-study-main');
+                main.innerHTML = `<div style="text-align: center; padding: 60px 20px; color: #ff6b6b;"><h2>${error.message}</h2><p><a href="../projects.html" class="btn btn-primary">Torna ai Progetti</a></p></div>`;
+            }
+        }
+
+        // Load case study when page loads
+        document.addEventListener('DOMContentLoaded', loadCaseStudy);
+    </script>
+</body>
+</html>
