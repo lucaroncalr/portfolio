@@ -7,8 +7,8 @@
       "year": 2025,
       "image": "https://placehold.co/400x250?text=VirtualCare",
       "clients": [
-        "Progetto accademico",
-        "ITS DAY 2025"
+        "Layout SRL",
+        "ITS ICT Piemonte"
       ],
       "it": {
         "title": "VirtualCare",
@@ -58,7 +58,7 @@
         "Azure Speech Services (TTS/STT)",
         "Anthropic – Claude Sonnet 4.5"
       ],
-      "caseStudyUrl": "cases/virtual-care.html"
+      "caseStudyUrl": "cases/case-study.html?id=virtual-care"
     },
     {
       "id": "borgo-petit",
@@ -67,7 +67,7 @@
       "year": 2025,
       "image": "https://placehold.co/400x250?text=Borgo+Petit",
       "clients": [
-        "Borgo Petit"
+        "Layout SRL"
       ],
       "externalLink": "https://borgopetit.it/creature-fantastiche-e-natura/",
       "it": {
@@ -118,7 +118,7 @@
         "WebGL",
         "Mobile"
       ],
-      "caseStudyUrl": "cases/borgo-petit.html"
+      "caseStudyUrl": "cases/case-study.html?id=borgo-petit"
     },
     {
       "id": "prime-concept",
@@ -127,7 +127,7 @@
       "year": 2025,
       "image": "https://placehold.co/400x250?text=Prime+Concept",
       "clients": [
-        "Primeconcept"
+        "Layout SRL"
       ],
       "it": {
         "title": "Prime Concept",
@@ -180,7 +180,7 @@
         "Componenti Blazor",
         "Seeding automatico"
       ],
-      "caseStudyUrl": "cases/prime-concept.html"
+      "caseStudyUrl": "cases/case-study.html?id=prime-concept"
     }
   ]
 }
