@@ -140,5 +140,136 @@ if ('IntersectionObserver' in window) {
     document.querySelectorAll('img').forEach(img => imageObserver.observe(img));
 }
 
+// ==================== PROJECTS PAGE LOADER ==================== 
+function loadProjects() {
+    const container = document.getElementById('projects-container');
+    if (!container) return; // Only run on projects page
+
+    const currentLang = document.documentElement.lang || 'it';
+
+    fetch('./data/projects.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            container.innerHTML = ''; // Clear loading state
+
+            if (!data.projects || data.projects.length === 0) {
+                container.innerHTML = '<p class="no-projects">Nessun progetto trovato</p>';
+                return;
+            }
+
+            data.projects.forEach((project, index) => {
+                const projectData = project[currentLang] || project.it;
+                const categoryBadge = project.category;
+                
+                const projectCard = document.createElement('div');
+                projectCard.className = 'project-card';
+                projectCard.setAttribute('data-aos', 'fade-up');
+                projectCard.setAttribute('data-aos-delay', (index * 100).toString());
+                projectCard.innerHTML = `
+                    <div class="card-glow"></div>
+                    <div class="project-image">
+                        <img src="${project.image}" alt="${projectData.title}">
+                        <div class="project-overlay">
+                            <span class="badge">${categoryBadge}</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>${projectData.title}</h3>
+                        <p>${projectData.description}</p>
+                        <div class="project-meta">
+                            <span class="year"><i class="fas fa-calendar"></i> ${project.year}</span>
+                            <span class="clients"><i class="fas fa-building"></i> ${project.clients.join(', ')}</span>
+                        </div>
+                        <div class="project-buttons">
+                            ${project.externalLink ? `<a href="${project.externalLink}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Vedi Progetto</a>` : ''}
+                            <a href="${project.caseStudyUrl}" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Case Study</a>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(projectCard);
+            });
+
+            // Reinitialize AOS animations
+            AOS.refresh();
+        })
+        .catch(error => {
+            console.error('Error loading projects:', error);
+            container.innerHTML = '<p class="error">Errore nel caricamento dei progetti</p>';
+        });
+}
+
+// Load projects when page is ready
+document.addEventListener('DOMContentLoaded', loadProjects);
+
+// ==================== FEATURED PROJECTS LOADER (Homepage) ==================== 
+function loadFeaturedProjects() {
+    const container = document.getElementById('featured-projects-container');
+    if (!container) return; // Only run on homepage
+
+    const currentLang = document.documentElement.lang || 'it';
+
+    fetch('./data/projects.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            container.innerHTML = ''; // Clear existing content
+
+            if (!data.projects || data.projects.length === 0) {
+                container.innerHTML = '<p class="no-projects">Nessun progetto trovato</p>';
+                return;
+            }
+
+            // Filter only featured projects
+            const featuredProjects = data.projects.filter(p => p.featured);
+
+            featuredProjects.forEach((project, index) => {
+                const projectData = project[currentLang] || project.it;
+                const categoryBadge = project.category;
+                
+                const projectCard = document.createElement('div');
+                projectCard.className = 'project-card';
+                projectCard.setAttribute('data-aos', 'fade-up');
+                projectCard.setAttribute('data-aos-delay', (index * 100).toString());
+                projectCard.innerHTML = `
+                    <div class="card-glow"></div>
+                    <div class="project-image">
+                        <img src="${project.image}" alt="${projectData.title}">
+                        <div class="project-overlay">
+                            <span class="badge">${categoryBadge}</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>${projectData.title}</h3>
+                        <p>${projectData.description}</p>
+                        <div class="project-buttons">
+                            ${project.externalLink ? `<a href="${project.externalLink}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Vedi Progetto</a>` : ''}
+                            <a href="${project.caseStudyUrl}" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Case Study</a>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(projectCard);
+            });
+
+            // Reinitialize AOS animations
+            AOS.refresh();
+        })
+        .catch(error => {
+            console.error('Error loading featured projects:', error);
+            container.innerHTML = '<p class="error">Errore nel caricamento dei progetti</p>';
+        });
+}
+
+// Load featured projects on homepage
+document.addEventListener('DOMContentLoaded', loadFeaturedProjects);
+
 console.log('Portfolio loaded successfully! 🚀');
 
