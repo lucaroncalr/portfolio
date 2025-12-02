@@ -186,8 +186,8 @@ function loadProjects() {
                             <span class="clients"><i class="fas fa-building"></i> ${project.clients.join(', ')}</span>
                         </div>
                         <div class="project-buttons">
-                            ${project.externalLink ? `<a href="${project.externalLink}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Vedi Progetto</a>` : ''}
                             <a href="${project.caseStudyUrl}" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Case Study</a>
+                            ${project.externalLink ? `<a href="${project.externalLink}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Vedi Progetto</a>` : ''}
                         </div>
                     </div>
                 `;
@@ -251,8 +251,8 @@ function loadFeaturedProjects() {
                         <h3>${projectData.title}</h3>
                         <p>${projectData.description}</p>
                         <div class="project-buttons">
-                            ${project.externalLink ? `<a href="${project.externalLink}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Vedi Progetto</a>` : ''}
                             <a href="${project.caseStudyUrl}" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Case Study</a>
+                            ${project.externalLink ? `<a href="${project.externalLink}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Vedi Progetto</a>` : ''}
                         </div>
                     </div>
                 `;

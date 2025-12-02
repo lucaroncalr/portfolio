@@ -1074,7 +1074,6 @@ body.light-mode .prompt-bracket {
         grid-template-columns: 1fr;
     }
 }
-}
 
 @media (max-width: 480px) {
     .case-study-hero {
@@ -1125,6 +1124,11 @@ body.light-mode .prompt-bracket {
     font-size: var(--font-body);
     line-height: 1.8;
     margin-bottom: var(--spacing-sm);
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
 }
 
 .tech-stack h3 {
