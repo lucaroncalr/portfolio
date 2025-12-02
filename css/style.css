@@ -617,6 +617,19 @@ body.light-mode .prompt-bracket {
     align-self: flex-start;
 }
 
+.projects-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spacing-lg);
+    gap: var(--spacing-md);
+}
+
+.projects-footer .btn-primary {
+    margin-top: 0;
+    animation: fadeInUp 0.6s ease 0.5s both;
+}
+
 /* ==================== ABOUT SECTION ==================== */
 .about {
     padding: 80px 20px;
