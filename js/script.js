@@ -7,7 +7,6 @@ AOS.init({
 
 // ==================== THEME TOGGLE ==================== 
 const themeBtn = document.getElementById('theme-btn');
-const htmlElement = document.documentElement;
 const body = document.body;
 
 // Load saved theme preference
