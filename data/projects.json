@@ -55,7 +55,7 @@
       },
       "techStack": [
         "Unity3D",
-        "ARFoundation",
+        "XR Interaction Toolkit",
         "Azure Speech Services (TTS/STT)",
         "Anthropic – Claude Sonnet 4.5"
       ],
