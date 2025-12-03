@@ -57,7 +57,7 @@
         "Unity3D",
         "ARFoundation",
         "Azure Speech Services (TTS/STT)",
-        "Anthropic – Claude Sonnet 4.5"
+        "Anthropic API"
       ],
       "caseStudyUrl": "cases/case-study.html?id=virtual-care"
     },
