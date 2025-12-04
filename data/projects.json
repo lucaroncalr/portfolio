@@ -5,7 +5,7 @@
       "featured": true,
       "category": "VR",
       "year": 2025,
-      "image": "https://placehold.co/400x250?text=VirtualCare",
+      "heroImage": "https://placehold.co/400x250?text=VirtualCare",
       "clients": [
         "Layout SRL",
         "ITS ICT Piemonte"
@@ -66,7 +66,7 @@
       "featured": true,
       "category": "AR",
       "year": 2025,
-      "image": "https://placehold.co/400x250?text=Borgo+Petit",
+      "heroImage": "https://placehold.co/400x250?text=Borgo+Petit",
       "clients": [
         "Layout SRL"
       ],
@@ -126,7 +126,7 @@
       "featured": true,
       "category": "Web",
       "year": 2025,
-      "image": "https://placehold.co/400x250?text=Prime+Concept",
+      "heroImage": "https://placehold.co/400x250?text=Prime+Concept",
       "clients": [
         "Layout SRL"
       ],

@@ -170,7 +170,7 @@ function createProjectCard(project, index, showMeta = false) {
     card.innerHTML = `
         <div class="card-glow"></div>
         <div class="project-image">
-            <img src="${project.image}" alt="${projectData.title}">
+            <img src="${project.heroImage}" alt="${projectData.title}">
             <div class="project-overlay">
                 <span class="badge">${project.category}</span>
             </div>
