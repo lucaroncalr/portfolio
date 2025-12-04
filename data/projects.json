@@ -5,11 +5,11 @@
       "featured": true,
       "category": "VR",
       "year": 2025,
-      "heroImage": "https://placehold.co/400x250?text=VirtualCare",
+      "heroImage": "https://placehold.co/1920x1080?text=VirtualCare",
       "images": [
-        "https://placehold.co/800x600?text=VirtualCare+1",
-        "https://placehold.co/800x600?text=VirtualCare+2",
-        "https://placehold.co/800x600?text=VirtualCare+3"
+        "https://placehold.co/1920x1080?text=VirtualCare+1",
+        "https://placehold.co/1920x1080?text=VirtualCare+2",
+        "https://placehold.co/1920x1080?text=VirtualCare+3"
       ],
       "clients": [
         "Layout SRL",
@@ -71,11 +71,11 @@
       "featured": true,
       "category": "AR",
       "year": 2025,
-      "heroImage": "https://placehold.co/400x250?text=Borgo+Petit",
+      "heroImage": "https://placehold.co/1920x1080?text=Borgo+Petit",
       "images": [
-        "https://placehold.co/800x600?text=Borgo+Petit+1",
-        "https://placehold.co/800x600?text=Borgo+Petit+2",
-        "https://placehold.co/800x600?text=Borgo+Petit+3"
+        "https://placehold.co/1920x1080?text=Borgo+Petit+1",
+        "https://placehold.co/1920x1080?text=Borgo+Petit+2",
+        "https://placehold.co/1920x1080?text=Borgo+Petit+3"
       ],
       "clients": [
         "Layout SRL"
@@ -136,11 +136,11 @@
       "featured": true,
       "category": "Web",
       "year": 2025,
-      "heroImage": "https://placehold.co/400x250?text=Prime+Concept",
+      "heroImage": "https://placehold.co/1920x1080?text=Prime+Concept",
       "images": [
-        "https://placehold.co/800x600?text=Prime+Concept+1",
-        "https://placehold.co/800x600?text=Prime+Concept+2",
-        "https://placehold.co/800x600?text=Prime+Concept+3"
+        "https://placehold.co/1920x1080?text=Prime+Concept+1",
+        "https://placehold.co/1920x1080?text=Prime+Concept+2",
+        "https://placehold.co/1920x1080?text=Prime+Concept+3"
       ],
       "clients": [
         "Layout SRL"
