@@ -2,6 +2,7 @@
   "projects": [
     {
       "id": "virtual-care",
+      "hidden": false,
       "featured": true,
       "category": "VR",
       "year": 2025,
@@ -67,6 +68,7 @@
     },
     {
       "id": "borgo-petit",
+      "hidden": false,
       "featured": true,
       "category": "AR",
       "year": 2025,
@@ -129,6 +131,7 @@
     },
     {
       "id": "prime-concept",
+      "hidden": true,
       "featured": true,
       "category": "Web",
       "year": 2025,

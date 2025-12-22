@@ -215,8 +215,8 @@ function loadProjectsToContainer(containerId, featuredOnly = false, showMeta = f
             }
 
             const projects = featuredOnly 
-                ? data.projects.filter(p => p.featured) 
-                : data.projects;
+                ? data.projects.filter(p => p.featured && !p.hidden) 
+                : data.projects.filter(p => !p.hidden);
 
             projects.forEach((project, index) => {
                 container.appendChild(createProjectCard(project, index, showMeta));
