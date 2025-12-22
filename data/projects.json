@@ -5,7 +5,11 @@
       "featured": true,
       "category": "VR",
       "year": 2025,
-      "image": "https://placehold.co/400x250?text=VirtualCare",
+      "heroImage": "../assets/images/virtual-care-logo.jpg",
+      "images": [
+        "../assets/images/virtual-care-patient-interaction.png",
+        "../assets/images/virtual-care-waiting-room.png"
+      ],
       "clients": [
         "Layout SRL",
         "ITS ICT Piemonte"
@@ -66,7 +70,9 @@
       "featured": true,
       "category": "AR",
       "year": 2025,
-      "image": "https://placehold.co/400x250?text=Borgo+Petit",
+      "heroImage": "../assets/images/borgo-petit-logo.jpg",
+      "images": [
+      ],
       "clients": [
         "Layout SRL"
       ],
@@ -126,7 +132,9 @@
       "featured": true,
       "category": "Web",
       "year": 2025,
-      "image": "https://placehold.co/400x250?text=Prime+Concept",
+      "heroImage": "https://placehold.co/1920x1080?text=Prime+Concept",
+      "images": [
+      ],
       "clients": [
         "Layout SRL"
       ],
