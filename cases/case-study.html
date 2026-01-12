@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Case Study - Luca Ronca Portfolio">
+    <meta name="author" content="Luca Ronca">
+    <title>Case Study - Luca Ronca</title>
+    <link rel="icon" href="https://placehold.co/64x64/0d1117/58a6ff?text=LR">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar Sticky -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <a href="../index.html">Luca Ronca</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#services">Servizi</a></li>
+                    <li><a href="../projects.html">Progetti</a></li>
+                    <li><a href="../index.html#about">Chi Sono</a></li>
+                    <li><a href="../index.html#contact">Contatti</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="theme-btn" class="theme-btn" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Case Study Header -->
+    <section class="case-study-hero">
+        <div class="container">
+            <div class="case-study-hero-content">
+                <a href="../projects.html" class="breadcrumb">
+                    <i class="fas fa-arrow-left"></i> Torna ai Progetti
+                </a>
+                <h1 id="case-title">Case Study</h1>
+                <p id="case-subtitle" class="case-subtitle"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="case-study-content">
+        <div class="container">
+            <div class="case-study-wrapper">
+                <!-- Hero Image -->
+                <div class="case-study-hero-image" data-aos="fade-up">
+                    <img id="case-image" src="" alt="Project">
+                </div>
+
+                <!-- Main Content -->
+                <div class="case-study-main">
+                    <!-- Challenge Section -->
+                    <section class="case-section" data-aos="fade-up" data-aos-delay="100">
+                        <h2>La Sfida</h2>
+                        <p id="case-challenge"></p>
+                    </section>
+
+                    <!-- Solution Section -->
+                    <section class="case-section" data-aos="fade-up" data-aos-delay="200">
+                        <h2>La Soluzione</h2>
+                        <p id="case-solution"></p>
+                    </section>
+
+                    <!-- Results Section -->
+                    <section class="case-section" data-aos="fade-up" data-aos-delay="400">
+                        <h2>Risultati</h2>
+                        <ul id="case-results" class="results-list"></ul>
+                    </section>
+
+                    <!-- Key Learnings Section -->
+                    <section class="case-section" data-aos="fade-up" data-aos-delay="500">
+                        <h2>Lezioni Apprese</h2>
+                        <ul id="case-learnings" class="learnings-list"></ul>
+                    </section>
+
+                    <!-- Image Carousel -->
+                    <div id="case-carousel" class="case-carousel" style="display: none;">
+                        <div class="carousel-container">
+                            <div class="carousel-track" id="carousel-track"></div>
+                        </div>
+                        <button class="carousel-btn carousel-btn-prev" id="carousel-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next" id="carousel-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="carousel-indicators" id="carousel-indicators"></div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="case-study-sidebar" data-aos="fade-up" data-aos-delay="200">
+                    <div class="sidebar-card">
+                        <h3>Informazioni Progetto</h3>
+                        <div class="info-group">
+                            <label><i class="fas fa-tag"></i> Categoria</label>
+                            <p id="sidebar-category"></p>
+                        </div>
+                        <div class="info-group">
+                            <label><i class="fas fa-briefcase"></i> Clienti</label>
+                            <p id="sidebar-clients"></p>
+                        </div>
+                        <div class="info-group">
+                            <label><i class="fas fa-calendar"></i> Anno</label>
+                            <p id="sidebar-year"></p>
+                        </div>
+                        <div class="info-group">
+                            <label><i class="fas fa-code"></i> Ruolo</label>
+                            <p id="sidebar-role"></p>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Tecnologie</h3>
+                        <div id="sidebar-tech" class="tech-tags"></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Luca Ronca. Tutti i diritti riservati.</p>
+            <p>P.IVA: 13210530013</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

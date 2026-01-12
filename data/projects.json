@@ -1,0 +1,198 @@
+{
+  "projects": [
+    {
+      "id": "virtual-care",
+      "hidden": false,
+      "featured": true,
+      "category": "VR",
+      "year": 2025,
+      "heroImage": "../assets/images/virtual-care-logo.jpg",
+      "images": [
+        "../assets/images/virtual-care-patient-interaction.png",
+        "../assets/images/virtual-care-waiting-room.png"
+      ],
+      "clients": [
+        "Layout SRL",
+        "ITS ICT Piemonte"
+      ],
+      "externalLink": "https://webxr.wearelayout.com/virtual-care/",
+      "it": {
+        "title": "VirtualCare",
+        "description": "Simulazione VR di uno scenario di accettazione e triage ospedaliero a scopo formativo, progettata per aiutare futuri operatori sanitari a gestire pazienti difficili e situazioni critiche.",
+        "caseStudy": {
+          "subtitle": "Imparare scenari reali in mondi virtuali",
+          "role": "VR Developer",
+          "challenge": "Creare un prototipo immersivo in realtà virtuale che riproducesse fedelmente la fase di accettazione e triage ospedaliero, con particolare attenzione alla gestione di \"pazienti difficili\". L'obiettivo era fornire uno strumento formativo realistico e interattivo che andasse oltre le simulazioni tradizionali.",
+          "solution": "È stato sviluppato un prototipo VR in cui l'utente interagisce con un paziente virtuale attraverso dialogo naturale. La simulazione è resa credibile grazie a:\n- un chatbot AI capace di rispondere in modo contestuale e realistico,\n- Text-To-Speech e Speech-To-Text per una comunicazione vocale verosimile,\n- un sistema di comportamento reattivo che adatta il dialogo in base alle scelte dell'utente.\nIl risultato è un ambiente formativo che simula pressioni e dinamiche tipiche del triage.",
+          "results": [
+            "Realizzazione di un prototipo funzionante presentato all'ITS DAY 2025",
+            "Dimostrazione concreta delle potenzialità della VR abbinata all'AI nel campo della formazione sanitaria",
+            "Validazione preliminare dell'approccio immersivo da parte di docenti e partecipanti"
+          ],
+          "keyLearnings": [
+            "L'integrazione tra VR e modelli linguistici avanzati permette di creare simulazioni altamente realistiche anche in fase prototipale.",
+            "La comunicazione vocale (TTS/STT) aumenta significativamente il coinvolgimento e la naturalezza dell'interazione.",
+            "Nei contesti formativi, la credibilità del comportamento del personaggio virtuale è più importante della complessità grafica.",
+            "Una progettazione modulare facilita l'estensione futura verso scenari più complessi o multi-personaggio."
+          ]
+        }
+      },
+      "en": {
+        "title": "VirtualCare",
+        "description": "VR simulation of a hospital reception and triage scenario for educational purposes, designed to help future healthcare professionals manage difficult patients and critical situations.",
+        "caseStudy": {
+          "subtitle": "Learn real scenarios in virtual worlds",
+          "role": "VR Developer",
+          "challenge": "Create an immersive virtual reality prototype that faithfully reproduced the hospital reception and triage phase, with particular attention to managing \"difficult patients\". The goal was to provide a realistic and interactive training tool that went beyond traditional simulations.",
+          "solution": "A VR prototype was developed in which the user interacts with a virtual patient through natural dialogue. The simulation is made credible thanks to:\n- an AI chatbot capable of responding in a contextual and realistic way,\n- Text-To-Speech and Speech-To-Text for realistic voice communication,\n- a reactive behavior system that adapts dialogue based on user choices.\nThe result is a training environment that simulates pressures and dynamics typical of triage.",
+          "results": [
+            "Implementation of a functional prototype presented at ITS DAY 2025",
+            "Concrete demonstration of the potential of VR combined with AI in healthcare training",
+            "Preliminary validation of the immersive approach by teachers and participants"
+          ],
+          "keyLearnings": [
+            "The integration between VR and advanced language models allows for highly realistic simulations even in the prototype phase.",
+            "Voice communication (TTS/STT) significantly increases engagement and naturalness of interaction.",
+            "In training contexts, the credibility of virtual character behavior is more important than graphic complexity.",
+            "Modular design facilitates future extension towards more complex or multi-character scenarios."
+          ]
+        }
+      },
+      "techStack": [
+        "Unity3D",
+        "XR Interaction Toolkit",
+        "Azure Speech Services (TTS/STT)",
+        "Anthropic API"
+      ],
+      "caseStudyUrl": "cases/case-study.html?id=virtual-care"
+    },
+    {
+      "id": "borgo-petit",
+      "hidden": false,
+      "featured": true,
+      "category": "AR",
+      "year": 2025,
+      "heroImage": "../assets/images/borgo-petit-logo.jpg",
+      "images": [
+      ],
+      "clients": [
+        "Layout SRL"
+      ],
+      "externalLink": "https://borgopetit.it/creature-fantastiche-e-natura/",
+      "it": {
+        "title": "Borgo Petit",
+        "description": "Applicazione web di realtà aumentata che trasforma immagini in esperienze multimediali poetiche, sviluppata in Unity tramite tecnologia WebAR. Utilizza image tracking per riconoscere immagini target e attivare contenuti video e audio sincronizzati.",
+        "caseStudy": {
+          "subtitle": "Creature fantastiche e Natura",
+          "role": "WebXR Developer",
+          "challenge": "Realizzare un'esperienza AR accessibile direttamente dal browser, capace di riconoscere specifiche immagini presenti lungo un percorso fisico e trasformarle in contenuti visivi e sonori evocativi. L'obiettivo era creare un'installazione narrativa per accompagnare i visitatori in due itinerari tematici, unendo arte, territorio e tecnologia senza richiedere app da installare.",
+          "solution": "È stata sviluppata una WebAR basata su image tracking che permette agli utenti di inquadrare immagini target e attivare contenuti poetici in tempo reale. Le principali soluzioni implementate includono:\n- riconoscimento preciso delle immagini tramite Imagine WebAR Image Tracker,\n- sincronizzazione video–audio per un'esperienza narrativa coerente,\n- interfaccia WebGL ottimizzata per dispositivi mobili,\n- caricamento leggero e fluido per garantire un'accessibilità immediata.\nIl risultato è un percorso AR che integra elementi artistici e naturali in un racconto digitale.",
+          "results": [
+            "Applicazione WebAR funzionante e accessibile senza installazioni, fruibile in pochi secondi tramite QR code.",
+            "Attivazione di esperienze AR che guidano gli utenti lungo due percorsi tematici.",
+            "Aumento del coinvolgimento del pubblico grazie all'integrazione tra contenuti poetici e narrazione multimediale."
+          ],
+          "keyLearnings": [
+            "Le tecnologie WebAR permettono esperienze altamente accessibili, ma richiedono una forte ottimizzazione per garantire stabilità su browser mobile.",
+            "L'image tracking necessita di una curata scelta e trattamento delle immagini target per garantire affidabilità in diversi contesti di luce e distanza.",
+            "La sincronizzazione audio–video in WebGL va progettata con attenzione per mantenere immersione e fluidità.",
+            "Semplificare l'interazione è fondamentale quando il pubblico è generalista e si trova in contesti outdoor."
+          ]
+        }
+      },
+      "en": {
+        "title": "Borgo Petit",
+        "description": "Web augmented reality application that transforms images into poetic multimedia experiences, developed in Unity using WebAR technology. Uses image tracking to recognize target images and activate synchronized video and audio content.",
+        "caseStudy": {
+          "subtitle": "Fantastic Creatures and Nature",
+          "role": "WebXR Developer",
+          "challenge": "Create an AR experience accessible directly from the browser, capable of recognizing specific images present along a physical path and transforming them into evocative visual and sound content. The goal was to create a narrative installation to guide visitors through two thematic routes, combining art, territory and technology without requiring apps to be installed.",
+          "solution": "A WebAR solution based on image tracking was developed that allows users to frame target images and activate poetic content in real time. The main solutions implemented include:\n- precise image recognition via Imagine WebAR Image Tracker,\n- video-audio synchronization for a coherent narrative experience,\n- WebGL interface optimized for mobile devices,\n- light and smooth loading to ensure immediate accessibility.\nThe result is an AR path that integrates artistic and natural elements into a digital story.",
+          "results": [
+            "Functional and accessible WebAR application without installations, usable in seconds via QR code.",
+            "Activation of AR experiences that guide users through two thematic routes.",
+            "Increased audience engagement through integration of poetic content and multimedia storytelling."
+          ],
+          "keyLearnings": [
+            "WebAR technologies enable highly accessible experiences, but require strong optimization to ensure stability on mobile browsers.",
+            "Image tracking requires careful selection and processing of target images to ensure reliability in different lighting and distance contexts.",
+            "Audio-video synchronization in WebGL must be carefully designed to maintain immersion and fluidity.",
+            "Simplifying interaction is essential when the audience is general and in outdoor contexts."
+          ]
+        }
+      },
+      "techStack": [
+        "Unity",
+        "Imagine WebAR - Image Tracker",
+        "WebGL",
+        "Mobile"
+      ],
+      "caseStudyUrl": "cases/case-study.html?id=borgo-petit"
+    },
+    {
+      "id": "prime-concept",
+      "hidden": true,
+      "featured": true,
+      "category": "Web",
+      "year": 2025,
+      "heroImage": "https://placehold.co/1920x1080?text=Prime+Concept",
+      "images": [
+      ],
+      "clients": [
+        "Layout SRL"
+      ],
+      "it": {
+        "title": "Prime Concept",
+        "description": "Piattaforma web dedicata alla gestione centralizzata di contenuti, casi d'uso e news per Primeconcept, azienda leader nei sistemi di visione industriale. Integra funzioni avanzate di tagging, amministrazione sicura e strumenti pensati per ottimizzare la comunicazione.",
+        "caseStudy": {
+          "subtitle": "Una piattaforma moderna e scalabile per digitalizzare la gestione dei contenuti aziendali.",
+          "role": "Backend Developer",
+          "challenge": "Primeconcept necessitava di una soluzione per gestire in modo efficiente news, casi d'uso, contenuti tecnici e richieste dei clienti. La mancanza di un sistema centralizzato rallentava la comunicazione e complicava la gestione interna.",
+          "solution": "È stata sviluppata una piattaforma web basata su ASP.NET Core con un backend strutturato per gestire contenuti dinamici tramite modelli estensibili (News, Case Studies, Topics). La soluzione include:\n- pannello di amministrazione con autenticazione basata su ASP.NET Identity,\n- sistema di tagging flessibile per classificare contenuti (news, casi d'uso, argomenti),\n- gestione dinamica dei contenuti con filtri, caroselli e workflow di pubblicazione,\n- sistema di richieste con notifiche email automatiche,\n- architettura containerizzata tramite Docker per un deploy semplice e stabile.",
+          "results": [
+            "Pannello admin più chiaro e accessibile per il team interno",
+            "Struttura modulare pronta per nuove funzionalità e scalabilità",
+            "Migliorata la coerenza dei contenuti grazie al sistema di tag centralizzato",
+            "Riduzione degli errori nelle richieste dei clienti grazie all'automazione email"
+          ],
+          "keyLearnings": [
+            "La progettazione modulare facilita l'estensibilità in contesti aziendali complessi.",
+            "Un buon sistema di tagging migliora significativamente l'architettura informativa.",
+            "Docker semplifica lo sviluppo collaborativo e rende il deployment più affidabile."
+          ]
+        }
+      },
+      "en": {
+        "title": "Prime Concept",
+        "description": "Web platform dedicated to centralized management of content, use cases and news for Primeconcept, a leader in industrial vision systems. Integrates advanced tagging functions, secure administration and tools designed to optimize communication.",
+        "caseStudy": {
+          "subtitle": "A modern and scalable platform to digitalize business content management.",
+          "role": "Backend Developer",
+          "challenge": "Primeconcept needed a solution to efficiently manage news, use cases, technical content and customer requests. The lack of a centralized system slowed communication and complicated internal management.",
+          "solution": "A web platform based on ASP.NET Core was developed with a structured backend to manage dynamic content through extensible models (News, Case Studies, Topics). The solution includes:\n- administration panel with ASP.NET Identity-based authentication,\n- flexible tagging system to classify content (news, use cases, topics),\n- dynamic content management with filters, carousels and publishing workflows,\n- request system with automatic email notifications,\n- containerized architecture via Docker for simple and stable deployment.",
+          "results": [
+            "Clearer and more accessible admin panel for the internal team",
+            "Modular structure ready for new features and scalability",
+            "Improved content consistency through the centralized tagging system",
+            "Reduced errors in customer requests through email automation"
+          ],
+          "keyLearnings": [
+            "Modular design facilitates extensibility in complex business contexts.",
+            "A good tagging system significantly improves information architecture.",
+            "Docker simplifies collaborative development and makes deployment more reliable."
+          ]
+        }
+      },
+      "techStack": [
+        "ASP.NET Core",
+        "Entity Framework Core",
+        "PostgreSQL",
+        "Docker & Docker Compose",
+        "Razor Pages",
+        "Componenti Blazor",
+        "Seeding automatico"
+      ],
+      "caseStudyUrl": "cases/case-study.html?id=prime-concept"
+    }
+  ]
+}
