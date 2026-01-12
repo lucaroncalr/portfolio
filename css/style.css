@@ -1336,6 +1336,11 @@ body.light-mode .prompt-bracket {
     z-index: 1;
 }
 
+.cv-download-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .about .tech-stack li::before {
     content: '';
     position: absolute;
